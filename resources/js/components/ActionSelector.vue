@@ -2,7 +2,7 @@
   <div>
     <div
         v-if="actions.length > 0 || availablePivotActions.length > 0"
-        class="block md:flex md:custom_align_right  items-center"
+        class="block md:flex md:custom_align_right  items-center mr-3"
     >
       <button
           v-for="action in availableActions"
