@@ -2,7 +2,7 @@
   <div>
     <div
         v-if="actions.length > 0 || availablePivotActions.length > 0"
-        class="block md:flex md:custom_align_right  items-center mr-1"
+        class="block md:flex md:custom_align_right  items-center mr-1 custom-action-select"
     >
       <button
           v-for="action in availableActions"
@@ -305,33 +305,33 @@ export default {
 }
 </script>
 <style lang="scss">
-.span-icon {
+.custom-action-select .span-icon {
   margin-right: .75rem;
   width: 1.25rem;
   height: 1.25rem;
 }
-.span-icon * {
+.custom-action-select .span-icon * {
   display:block;
 }
-.btn:hover *, .btn:hover * path {
+.custom-action-select .btn:hover *, .custom-action-select .btn:hover * path {
   fill: var(--white);
 }
-.border-primary {
+.custom-action-select .border-primary {
   border: 1px solid var(--primary);
 }
-.btn:hover .icon_hover,.btn:hover .icon_hover path {
+.custom-action-select .btn:hover .icon_hover, .custom-action-select .btn:hover .icon_hover path {
   fill:var(--white);
 }
 @media (min-width:768px) {
-  .md\:flex{
+  .custom-action-select .md\:flex{
     display:flex;
   }
 }
 @media(max-width:767px) {
-  .md\:mb-2{
+  .custom-action-select .md\:mb-2{
     margin-bottom:.5rem
   }
-  .md\:custom_align_right {
+  .custom-action-select .md\:custom_align_right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
