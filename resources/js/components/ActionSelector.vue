@@ -8,7 +8,7 @@
           v-for="action in availableActions"
           :key="action.uriKey"
           @click.prevent="determineActionStrategy(action.uriKey)"
-          class="btn md:mb-2 flex btn-default hover:bg-primary hover:text-white  btn-dark text-white sm:flex-none lg:flex items-center justify-center px-3 mr-2 border-primary" >
+          class="btn md:mb-2 flex btn-default hover:bg-primary hover:text-white  btn-dark text-white sm:flex-none lg:flex items-center justify-center px-3 mr-2" >
         <span class="span-icon" v-html="action.icon"></span>
         <span class="text-base  whitespace-no-wrap">{{ action.name }}</span>
       </button>
