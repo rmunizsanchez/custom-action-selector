@@ -2,6 +2,7 @@
 
 namespace Energon7\CustomActionSelector;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
