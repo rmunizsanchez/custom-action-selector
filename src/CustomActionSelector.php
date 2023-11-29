@@ -18,7 +18,7 @@ class CustomActionSelector extends Tool
         Nova::script('custom-action-selector', __DIR__.'/../dist/js/tool.js');
     }
 
-    public function menu(Request $request): array
+    public function menu(Request $request)
     {
     }
 }
